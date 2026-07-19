@@ -1,0 +1,16 @@
+CASSIE HEN REALTY GROUP — NETLIFY FORM SETUP
+
+After uploading this ZIP to Netlify:
+
+1. Submit one test inquiry and one test rental application from the live website.
+2. In Netlify, open the project and choose Forms.
+3. Confirm that these two forms appear:
+   - rental-inquiry
+   - rental-application
+4. Open Forms > Form notifications (or Notifications) > Add notification > Email notification.
+5. Send notifications to: carriehen@protonmail.com
+6. Test again and confirm both the Netlify submission and the email alert arrive.
+
+Security:
+- Do not ask applicants for Social Security numbers, bank credentials, card numbers, passwords, identity-document images, or crypto private keys through these forms.
+- Netlify email notifications are configured in the dashboard, not inside the website code.
