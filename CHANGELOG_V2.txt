@@ -8,3 +8,5 @@ Updated:
 - Clearly disclosed the $80 application fee without implying approval is guaranteed.
 - Preserved Netlify Forms, privacy, terms, thank-you pages, redirects, and existing assets.
 - Preserved GitHub-to-Netlify compatibility.
+
+2026-07-21: Moved Rental Inquiry directly below hero contact strip, placed Application Fee immediately below inquiry, and updated navigation/hero CTAs.
