@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rental Application | Carrie Housing</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <main class="section">
+    <div class="container">
+
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow">Carrie Housing</p>
+          <h1>Online Rental Application</h1>
+        </div>
+      </div>
+
+      <p>
+        Complete all required fields accurately. Have a valid government-issued
+        photo ID ready before submitting.
+      </p>
+
+      <form
+        name="rental-application"
+        method="POST"
+        action="/thanks.html"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        enctype="multipart/form-data"
+      >
+
+        <input
+          type="hidden"
+          name="form-name"
+          value="rental-application"
+        >
+
+        <p hidden>
+          <label>
+            Do not fill this out:
+            <input name="bot-field">
+          </label>
+        </p>
+
+        <h2>Applicant Information</h2>
+
+        <label>
+          Full legal name
+          <input
+            type="text"
+            name="full-name"
+            required
+          >
+        </label>
+
+        <label>
+          Email address
+          <input
+            type="email"
+            name="email"
+            required
+          >
+        </label>
+
+        <label>
+          Phone number
+          <input
+            type="tel"
+            name="phone"
+            required
+          >
+        </label>
+
+        <label>
+          Date of birth
+          <input
+            type="date"
+            name="date-of-birth"
+            required
+          >
+        </label>
+
+        <h2>Property Information</h2>
+
+        <label>
+          Property address you are applying for
+          <input
+            type="text"
+            name="property-address"
+            required
+          >
+        </label>
+
+        <label>
+          Desired move-in date
+          <input
+            type="date"
+            name="move-in-date"
+            required
+          >
+        </label>
+
+        <label>
+          Number of occupants
+          <input
+            type="number"
+            name="number-of-occupants"
+            min="1"
+            required
+          >
+        </label>
+
+        <label>
+          Number of pets
+          <input
+            type="number"
+            name="number-of-pets"
+            min="0"
+            value="0"
+            required
+          >
+        </label>
+
+        <label>
+          Pet details
+          <textarea
+            name="pet-details"
+            rows="3"
+            placeholder="Type, breed, weight, and age. Enter None if you have no pets."
+          ></textarea>
+        </label>
+
+        <h2>Current Residence</h2>
+
+        <label>
+          Current address
+          <input
+            type="text"
+            name="current-address"
+            required
+          >
+        </label>
+
+        <label>
+          Current landlord or property manager
+          <input
+            type="text"
+            name="current-landlord"
+          >
+        </label>
+
+        <label>
+          Landlord phone number
+          <input
+            type="tel"
+            name="landlord-phone"
+          >
+        </label>
+
+        <label>
+          Current monthly rent
+          <input
+            type="number"
+            name="current-rent"
+            min="0"
+            step="0.01"
+          >
+        </label>
+
+        <label>
+          Reason for moving
+          <textarea
+            name="reason-for-moving"
+            rows="4"
+            required
+          ></textarea>
+        </label>
+
+        <h2>Employment and Income</h2>
+
+        <label>
+          Employer name
+          <input
+            type="text"
+            name="employer-name"
+            required
+          >
+        </label>
+
+        <label>
+          Job title
+          <input
+            type="text"
+            name="job-title"
+            required
+          >
+        </label>
+
+        <label>
+          Employer phone number
+          <input
+            type="tel"
+            name="employer-phone"
+            required
+          >
+        </label>
+
+        <label>
+          Monthly gross income
+          <input
+            type="number"
+            name="monthly-income"
+            min="0"
+            step="0.01"
+            required
+          >
+        </label>
+
+        <label>
+          Other income
+          <input
+            type="text"
+            name="other-income"
+            placeholder="Optional"
+          >
+        </label>
+
+        <h2>Emergency Contact</h2>
+
+        <label>
+          Emergency contact name
+          <input
+            type="text"
+            name="emergency-contact-name"
+            required
+          >
+        </label>
+
+        <label>
+          Relationship
+          <input
+            type="text"
+            name="emergency-contact-relationship"
+            required
+          >
+        </label>
+
+        <label>
+          Emergency contact phone
+          <input
+            type="tel"
+            name="emergency-contact-phone"
+            required
+          >
+        </label>
+
+        <h2>Document Uploads</h2>
+
+        <label>
+          Government-issued photo ID
+          <input
+            type="file"
+            name="photo-id"
+            accept=".jpg,.jpeg,.png,.pdf"
+            required
+          >
+        </label>
+
+        <label>
+          Proof of income
+          <input
+            type="file"
+            name="proof-of-income"
+            accept=".jpg,.jpeg,.png,.pdf"
+            required
+          >
+        </label>
+
+        <label>
+          Additional supporting document
+          <input
+            type="file"
+            name="additional-document"
+            accept=".jpg,.jpeg,.png,.pdf"
+          >
+        </label>
+
+        <h2>Applicant Certification</h2>
+
+        <label>
+          <input
+            type="checkbox"
+            name="accuracy-certification"
+            required
+          >
+          I certify that the information provided in this application is true
+          and complete to the best of my knowledge.
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="screening-consent"
+            required
+          >
+          I authorize the property owner or authorized manager to verify the
+          information provided, subject to applicable law and any separate
+          required disclosures or authorizations.
+        </label>
+
+        <label>
+          Electronic signature
+          <input
+            type="text"
+            name="electronic-signature"
+            placeholder="Type your full legal name"
+            required
+          >
+        </label>
+
+        <label>
+          Date signed
+          <input
+            type="date"
+            name="date-signed"
+            required
+          >
+        </label>
+
+        <button
+          class="button button-primary full"
+          type="submit"
+        >
+          Submit Rental Application
+        </button>
+
+      </form>
+
+    </div>
+  </main>
+
+</body>
+</html>
