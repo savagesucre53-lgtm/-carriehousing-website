@@ -27,7 +27,7 @@
 
 
 
-<a href="#contact">Rental Inquiry</a><a href="#application">Application Fee</a><a href="#services">Services</a><a href="#process">How It Works</a><a href="#about">About</a><a href="#faq">FAQ</a><a class="nav-cta" href="#contact">Start Your Inquiry</a></nav>
+<a href="#contact">Rental Inquiry</a><a href="#tour">Request a Tour</a><a href="#application">Application Fee</a><a href="#services">Services</a><a href="#process">How It Works</a><a href="#about">About</a><a href="#faq">FAQ</a><a class="nav-cta" href="#contact">Start Your Inquiry</a></nav>
 </div>
 </header>
 <main id="main">
@@ -103,7 +103,51 @@
 <p class="form-note">Processed through Netlify Forms. Do not submit Social Security numbers, banking credentials, card numbers, or identity documents here.</p>
 </form>
 </div>
-</section><section class="section application-banner" id="application">
+</section><section class="section tour-section" id="tour">
+<div class="container contact-grid">
+<div class="contact-copy">
+<p class="eyebrow">Schedule a property viewing</p>
+<h2>Request a tour</h2>
+<p>Complete this form to request an in-person or virtual tour. Your preferred date and time are not confirmed until you receive a scheduling message from Carrie Hen Realty Group.</p>
+<div class="contact-details">
+<a href="sms:+12607279317?body=Hi%20Carrie%2C%20I%20would%20like%20to%20request%20a%20property%20tour."><small>Tour assistance</small><strong>(260) 727-9317</strong></a>
+<a href="mailto:carriehen@protonmail.com?subject=Property%20Tour%20Request"><small>Email</small><strong>carriehen@protonmail.com</strong></a>
+<div><small>Tour availability</small><strong>By appointment</strong></div>
+</div>
+</div>
+<form action="/" class="contact-form" data-netlify="true" id="tour-request-form" method="POST" name="tour-request" netlify-honeypot="bot-field">
+<input name="form-name" type="hidden" value="tour-request"/>
+<p class="hidden"><label>Do not fill this out: <input name="bot-field"/></label></p>
+<label>Full name<input autocomplete="name" name="name" required type="text"/></label>
+<div class="form-row">
+<label>Email address<input autocomplete="email" name="email" required type="email"/></label>
+<label>Phone number<input autocomplete="tel" name="phone" required type="tel"/></label>
+</div>
+<label>Property address or listing<input name="property" placeholder="Enter the property address or listing name" required type="text"/></label>
+<div class="form-row">
+<label>Preferred tour type<select name="tour-type" required><option value="">Select</option><option>In-person tour</option><option>Virtual tour</option></select></label>
+<label>Preferred date<input name="preferred-date" required type="date"/></label>
+</div>
+<div class="form-row">
+<label>Preferred time<select name="preferred-time" required><option value="">Select</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></label>
+<label>Alternative date and time<input name="alternative-date-time" placeholder="Example: Saturday after 2 PM" type="text"/></label>
+</div>
+<div class="form-row">
+<label>Desired move-in date<input name="move-in-date" type="date"/></label>
+<label>Monthly budget<input name="monthly-budget" placeholder="Example: $1,500" type="text"/></label>
+</div>
+<div class="form-row">
+<label>Number of occupants<input min="1" name="occupants" type="number"/></label>
+<label>Pets<select name="pets"><option value="">Select</option><option>No pets</option><option>Yes — 1 pet</option><option>Yes — 2 pets</option><option>Yes — 3+ pets</option></select></label>
+</div>
+<label>Housing assistance<select name="housing-assistance"><option value="">Select</option><option>No</option><option>Section 8 / Housing Choice Voucher</option><option>Other housing assistance</option></select></label>
+<label>Additional comments<textarea name="comments" placeholder="Accessibility needs, pet details, scheduling notes, or questions" rows="4"></textarea></label>
+<label class="consent"><input name="consent" required type="checkbox" value="yes"/><span>I understand this request does not confirm a tour, reserve the property, or guarantee approval.</span></label>
+<button class="button button-primary full" type="submit">Submit Tour Request</button>
+<p class="form-note">Processed through Netlify Forms. Do not submit Social Security numbers, banking credentials, card numbers, or identity documents here.</p>
+</form>
+</div>
+<section class="section application-banner" id="application">
 <div class="container application-banner-grid">
 <div>
 <p class="eyebrow light">After your rental inquiry is reviewed and you receive written property details, an <strong>$80 application fee</strong> may be required before application access is provided. Do not send payment until official instructions are sent from <strong>carriehen@protonmail.com</strong>.</p>
@@ -190,7 +234,7 @@
 <footer class="site-footer">
 <div class="container footer-main">
 <div class="footer-brand"><span class="logo-mark small">CH</span><div><strong>Carrie Hen</strong><small>Realty Group</small></div></div>
-<div class="footer-links"><a href="#services">Services</a><a href="#process">Process</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+<div class="footer-links"><a href="#tour">Request a Tour</a><a href="#services">Services</a><a href="#process">Process</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
 <p>© <span id="year"></span> Carrie Hen Realty Group.</p>
 </div>
 <div class="container legal-footer">Equal Housing Opportunity. Rental availability, application fees, screening practices, and services are subject to applicable federal, state, and local law.</div>
