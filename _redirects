@@ -1,2 +1,9 @@
+
+/application /application.html 301
+/application.html /application 301
+
+/pay /pay.html 301
+/pay.html /pay 301
+
 /thanks /thanks/ 301
 /thanks.html /thanks/ 301
