@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Application Fee | Carrie Housing</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .payment-box {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .fee-card {
+      margin: 30px 0;
+      padding: 28px;
+      border: 1px solid #ddd;
+      border-radius: 14px;
+    }
+
+    .fee-amount {
+      font-size: 42px;
+      font-weight: 700;
+      margin: 10px 0;
+    }
+
+    .payment-methods {
+      margin: 20px 0 30px;
+      line-height: 1.8;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 42px;
+        line-height: 1;
+      }
+
+      .button {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="section">
+    <div class="container payment-box">
+
+      <p class="eyebrow">Carrie Housing</p>
+
+      <h1>Application Submitted</h1>
+
+      <p>
+        Your rental application has been received.
+      </p>
+
+      <div class="fee-card">
+
+        <p>Rental Application Fee</p>
+
+        <div class="fee-amount">$50</div>
+
+        <p>
+          The application fee is $50 per applicant.
+        </p>
+
+        <p>
+          To complete your application, please request payment instructions below.
+        </p>
+
+        <div class="payment-methods">
+          Available payment methods may include:<br>
+          Zelle • PayPal • Cash App • Chime • Card Payment
+        </div>
+
+        <a
+          class="button button-primary full"
+          href="mailto:YOUR-carriehen@protonmail.com?subject=Rental%20Application%20Payment%20Instructions&body=Hello%2C%0A%0AI%20have%20submitted%20my%20rental%20application%20and%20would%20like%20to%20request%20payment%20instructions%20for%20the%20%2450%20application%20fee.%0A%0AFull%20Name%3A%20%0AProperty%20Address%3A%20%0APreferred%20Payment%20Method%3A%20"
+        >
+          Request Payment Instructions
+        </a>
+
+      </div>
+
+      <p>
+        Payment of the application fee does not guarantee approval or tenancy.
+        Applications are reviewed separately in accordance with applicable requirements.
+      </p>
+
+    </div>
+  </main>
+
+</body>
+</html>
