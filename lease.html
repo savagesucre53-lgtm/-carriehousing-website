@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Residential Lease Agreement | Carrie Housing</title>
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f5f5f5;
+  color:#222;
+}
+
+.container{
+  max-width:850px;
+  margin:40px auto;
+  background:#fff;
+  padding:40px;
+  border-radius:10px;
+  box-shadow:0 4px 20px rgba(0,0,0,.08);
+}
+
+h1{
+  text-align:center;
+  margin-bottom:5px;
+}
+
+h2{
+  margin-top:35px;
+  border-bottom:1px solid #ddd;
+  padding-bottom:8px;
+}
+
+.subtitle{
+  text-align:center;
+  margin-bottom:40px;
+  color:#666;
+}
+
+.info{
+  line-height:1.8;
+}
+
+label{
+  display:block;
+  font-weight:bold;
+  margin-top:18px;
+}
+
+input,
+textarea{
+  width:100%;
+  padding:13px;
+  margin-top:6px;
+  border:1px solid #ccc;
+  border-radius:6px;
+  font-size:16px;
+}
+
+textarea{
+  min-height:100px;
+}
+
+.payment-box{
+  background:#f7f7f7;
+  padding:20px;
+  border-radius:8px;
+  line-height:1.8;
+}
+
+.total{
+  font-size:22px;
+  font-weight:bold;
+}
+
+.agreement{
+  margin-top:30px;
+  padding:20px;
+  background:#f7f7f7;
+  border-radius:8px;
+}
+
+.agreement label{
+  font-weight:normal;
+}
+
+.agreement input{
+  width:auto;
+  margin-right:8px;
+}
+
+button{
+  width:100%;
+  padding:16px;
+  margin-top:25px;
+  border:none;
+  border-radius:6px;
+  background:#111;
+  color:#fff;
+  font-size:17px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+button:hover{
+  opacity:.9;
+}
+
+.footer{
+  text-align:center;
+  margin-top:30px;
+  color:#777;
+}
+
+@media(max-width:768px){
+  .container{
+    margin:0;
+    padding:25px 18px;
+    border-radius:0;
+  }
+
+  h1{
+    font-size:30px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>CARRIE HOUSING</h1>
+<p class="subtitle">Residential Lease Agreement</p>
+
+<form
+  name="lease-signature"
+  method="POST"
+  data-netlify="true">
+
+<input type="hidden" name="form-name" value="lease-signature">
+
+<h2>Property Information</h2>
+
+<div class="info">
+<strong>Property Address:</strong><br>
+125 N Lincoln Ave<br>
+Pocatello, ID 83204
+
+<br><br>
+
+<strong>Bedrooms:</strong> 1<br>
+<strong>Bathrooms:</strong> 1
+</div>
+
+<h2>Landlord Information</h2>
+
+<div class="info">
+<strong>Landlord:</strong> Christopher Harvey<br>
+<strong>Email:</strong> Christopherhavey7@gmail.com<br>
+<strong>Phone:</strong> (319) 289-5242
+</div>
+
+<h2>Tenant Information</h2>
+
+<label>Full Legal Name</label>
+<input
+  type="text"
+  name="tenant_name"
+  required>
+
+<label>Email Address</label>
+<input
+  type="email"
+  name="tenant_email"
+  required>
+
+<label>Phone Number</label>
+<input
+  type="tel"
+  name="tenant_phone"
+  required>
+
+<h2>Lease Terms</h2>
+
+<div class="info">
+
+<strong>Move-In Date:</strong> August 26, 2026
+
+<br><br>
+
+<strong>Monthly Rent:</strong> $750
+
+<br>
+
+<strong>Monthly Utilities:</strong> $35
+
+<p>
+The tenant agrees to use the property as a residential dwelling
+and maintain the property in a reasonably clean and safe condition.
+</p>
+
+<p>
+The tenant agrees to promptly report maintenance issues and may
+be responsible for damage beyond normal wear and tear where
+permitted by applicable law.
+</p>
+
+<p>
+The landlord or authorized representatives may enter the property
+for lawful purposes, including repairs, maintenance and inspections,
+subject to applicable Idaho notice requirements.
+</p>
+
+<p>
+This agreement is governed by applicable Idaho landlord-tenant law.
+</p>
+
+</div>
+
+<h2>Move-In Payment Summary</h2>
+
+<div class="payment-box">
+
+Security Deposit: <strong>$250 — Paid</strong>
+
+<br>
+
+First Month Rent: <strong>$750</strong>
+
+<br>
+
+Utilities / Other Agreed Charges:
+<strong>$35</strong>
+
+<hr>
+
+<div class="total">
+Total Move-In Amount: $1,035
+</div>
+
+</div>
+
+<h2>Additional Terms</h2>
+
+<textarea
+  name="additional_terms"
+  placeholder="Additional lease terms, if applicable"></textarea>
+
+<h2>Electronic Signature</h2>
+
+<p>
+By completing the information below, the tenant confirms that
+they have reviewed and agree to the terms of this Residential
+Lease Agreement.
+</p>
+
+<label>Tenant Signature — Type Full Legal Name</label>
+
+<input
+  type="text"
+  name="tenant_signature"
+  required>
+
+<label>Date Signed</label>
+
+<input
+  type="date"
+  name="date_signed"
+  required>
+
+<div class="agreement">
+
+<label>
+<input
+  type="checkbox"
+  name="agreement"
+  value="Agreed"
+  required>
+
+I have read and agree to the terms of this Residential Lease Agreement
+and understand that typing my name above constitutes my electronic
+signature.
+</label>
+
+</div>
+
+<button type="submit">
+I Agree & Sign Lease
+</button>
+
+</form>
+
+<div class="footer">
+Carrie Housing<br>
+Professional Rental & Leasing Services
+</div>
+
+</div>
+
+</body>
+</html>
